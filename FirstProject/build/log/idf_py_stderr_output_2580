@@ -1,0 +1,363 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810f4: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e9f: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e90: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d89a2: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:105
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40087f83: vPortClearInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+0x400e31fb: vPortExitCriticalSafe at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:604
+ (inlined by) gptimer_get_raw_count at C:/Espressif/frameworks/esp-idf-v5.1.4/components/driver/gptimer/gptimer.c:200
+0x400d5734: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:80
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e9c: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e95: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e90: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e95: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e9c: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e8d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:167
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4e95: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m0x400d7113: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d74e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d4ea5: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.1.4/components/hal/esp32/include/hal/uart_ll.h:313 (discriminator 1)
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:169 (discriminator 1)
+0x400d565b: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_uart.c:222
+0x400d44c7: console_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs_console.c:73
+0x400d408e: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.4/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d8bb7: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e0953: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dc54e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x400d8d65: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+0x400d574e: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:81 (discriminator 2)
+0x400e3d90: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.

@@ -1,0 +1,170 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810f4: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x400d70bb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d7488: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d56f5: app_main at C:/Espressif/frameworks/esp-idf-v5.1.4/workspace/FirstProject/main/main.c:72 (discriminator 1)
+0x400e3cbc: main_task at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/app_startup.c:208 (discriminator 13)
+0x40087c9d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m
